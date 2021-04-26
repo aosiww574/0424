@@ -12,6 +12,16 @@
   background-position: center center;
   background-size: 100% 100%;
 }
+.all .c {
+  background-color: #faa;
+  z-index: 20;
+  height: 60px;
+  width: 62px;
+  border-radius: 50%;
+  position: fixed;
+  top: 55.4%;
+  left: 66%;
+}
 .all .header {
   width: 100%;
   margin: 0 auto;
@@ -73,6 +83,9 @@
 .all .button-group {
   width: 100%;
 }
+.all .button-group a {
+  text-decoration: none;
+}
 .all .button-group button {
   display: block;
   margin: 0 auto;
@@ -105,6 +118,29 @@
   display: block;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: -0.2rem;
+}
+.all .qq-wrapper {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  padding-bottom: 30px;
+}
+.all .qq-wrapper .h2-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 157px;
+  justify-content: center;
+  margin-right: 10px;
+  color: #777;
+}
+.all .qq-wrapper .h2-wrapper p {
+  font-size: 30px;
+  text-align: center;
+}
+.all .qq-wrapper img {
+  width: 52%;
 }
 .swiper-container {
   /* 輪播長和寬 */
@@ -166,20 +202,27 @@
     right: 10px;
   }
   .all .header .contactP {
-    display: none;
+    position: fixed;
+    top: 5rem;
+    z-index: 20;
+    right: 0;
+    width: 0.6rem;
+  }
+  .all .logo-5 {
+    width: 70%;
   }
   .all .logo-5 img {
-    top: 0;
+    top: -0.25rem;
   }
   .all #textimg {
     position: relative;
-    top: 1rem;
+    top: 0.3rem;
     width: 50%;
     margin: 0 auto;
   }
   .all .button-group button {
     position: relative;
-    top: 1rem;
+    top: 0.3rem;
     height: 0.4rem;
     width: 50%;
     width: 40%;
@@ -194,7 +237,7 @@
   }
   .all .text {
     position: relative;
-    top: 1rem;
+    top: 0.3rem;
   }
   .all .text p {
     font-size: 0.12rem;
@@ -202,16 +245,31 @@
   }
   .all .footer {
     position: relative;
-    top: 1rem;
+    top: 0.3rem;
   }
   .all .footer img {
     width: 50%;
   }
+  .all .qq-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .all .qq-wrapper .h2-wrapper {
+    justify-content: center;
+  }
+  .all .qq-wrapper img {
+    width: 150px;
+  }
   .swiper-container {
-    top: 1rem;
+    top: 0.2rem;
+  }
+  .swiper-container-horizontal .swiper-pagination-bullets {
+    bottom: -40px;
   }
   .swiper-slide img {
-    height: 5rem;
+    height: 4.15rem;
     width: 50%;
   }
 }

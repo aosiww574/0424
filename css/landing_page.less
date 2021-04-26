@@ -6,6 +6,17 @@
 }
 
 .all {
+    .c {
+        background-color: #faa;
+        z-index: 20;
+        height: 60px;
+        width: 62px;
+        border-radius: 50%;
+        position: fixed;
+        top: 55.4%;
+        left: 66%;
+    }
+
     max-width: 750px;
     width: 100%;
     margin: 0 auto;
@@ -90,6 +101,10 @@
     .button-group {
         width: 100%;
 
+        a {
+            text-decoration: none;
+        }
+
         button {
             display: block;
             margin: 0 auto;
@@ -126,6 +141,34 @@
             display: block;
             width: 100%;
             margin: 0 auto;
+            position: relative;
+            top: -.2rem;
+        }
+    }
+
+    .qq-wrapper {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        padding-bottom: 30px;
+
+        .h2-wrapper {
+            display: flex;
+            // display: inline-block;
+            flex-direction: column;
+            height: 157px;
+            justify-content: center;
+            margin-right: 10px;
+            color: #777;
+
+            p {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+
+        img {
+            width: 52%;
         }
     }
 
@@ -186,7 +229,6 @@
         max-width: 1140px;
         background: none;
 
-
         .header {
             .logo1 {
                 display: none;
@@ -205,27 +247,35 @@
             }
 
             .contactP {
-                display: none;
+                position: fixed;
+                top:5rem;
+                z-index: 20;
+                right: 0;
+                width: .6rem;
             }
         }
 
         .logo-5 {
+            width: 70%;
+
             img {
-                top: 0;
+                top: -.25rem;
             }
         }
 
         #textimg {
             position: relative;
-            top: 1rem;
+            top: .3rem;
             width: 50%;
             margin: 0 auto;
         }
 
         .button-group {
+
+
             button {
                 position: relative;
-                top: 1rem;
+                top: .3rem;
                 height: 0.4rem;
                 width: 50%;
                 width: 40%;
@@ -244,7 +294,7 @@
 
         .text {
             position: relative;
-            top: 1rem;
+            top: .3rem;
 
             p {
                 font-size: 0.12rem;
@@ -254,20 +304,40 @@
 
         .footer {
             position: relative;
-            top: 1rem;
+            top: .3rem;
 
             img {
                 width: 50%;
             }
         }
+
+        .qq-wrapper {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+
+
+            .h2-wrapper {
+                justify-content: center;
+            }
+
+            img {
+                width: 150px;
+            }
+        }
     }
 
     .swiper-container {
-        top: 1rem;
+        top: .2rem;
+    }
+
+    .swiper-container-horizontal .swiper-pagination-bullets {
+        bottom: -40px;
     }
 
     .swiper-slide img {
-        height: 5rem;
+        height: 4.15rem;
         width: 50%;
     }
 
