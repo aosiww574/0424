@@ -30,8 +30,8 @@
 }
 .all .header .contactP {
   position: absolute;
-  top: 10.4rem;
-  right: 0.1rem;
+  top: 10.14rem;
+  right: 0;
   width: 1.2rem;
 }
 .all .logo-5 {
@@ -151,7 +151,7 @@
   }
   .header .contact {
     display: block !important;
-    right: 0;
+    right: 10px;
   }
   .header .contactP {
     display: none;
@@ -166,7 +166,7 @@
   }
   .all .header .contact {
     right: 0.5rem;
-    right: 0;
+    right: 10px;
   }
   .all .button-group .ifcantdownload {
     border: 5px solid #4080ff;
@@ -177,12 +177,10 @@
     font-size: 200px;
   }
   .all {
-    max-width: 1200px;
     max-width: 1500px;
   }
   .all .header .contact {
-    right: 0.5rem;
-    right: 0;
+    right: 10px;
   }
   .all .button-group .ifcantdownload {
     border: 5px solid #4080ff;
