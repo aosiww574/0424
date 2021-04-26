@@ -20,13 +20,18 @@
   width: 100%;
 }
 .all .header .contact {
-  position: absolute;
   position: fixed;
-  right: 0;
   right: -1rem;
-  top: 0.5rem;
   top: 9rem;
   width: 4rem;
+  display: none;
+  z-index: 10;
+}
+.all .header .contactP {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.2rem;
+  width: 1.2rem;
 }
 .all .logo-5 {
   width: 90%;
@@ -53,7 +58,6 @@
   line-height: 0.24rem;
   text-align: center;
   font-weight: lighter;
-  font-weight: 300;
   font-weight: 100;
   color: gray;
 }
@@ -102,8 +106,6 @@
   /* 輪播長和寬 */
   width: 100%;
   height: 100%;
-  /* width: 200px;
-    height: 200px; */
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -133,7 +135,6 @@
   width: 80%;
 }
 .swiper-container-horizontal .swiper-pagination-bullets {
-  bottom: -12px;
   bottom: -14px;
 }
 @media screen and (min-width: 1200px) {
@@ -142,6 +143,12 @@
   }
   .all {
     max-width: 1140px;
+  }
+  .header .contact {
+    display: block !important;
+  }
+  .header .contactP {
+    display: none;
   }
 }
 @media screen and (min-width: 1440px) {
