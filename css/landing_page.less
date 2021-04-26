@@ -11,6 +11,7 @@
     margin: 0 auto;
     background-image: url(../image/back-01.png);
     background-position: center center;
+    background-size: 100% 100%;
 
 
     .header {
@@ -25,8 +26,8 @@
         .contact {
             position: fixed;
             right: 0;
-            bottom: 1.5rem;
-            width: 2rem;
+            bottom: 1rem;
+            width: .6rem;
             display: none;
             z-index: 10;
         }
@@ -37,7 +38,7 @@
             right: .2rem;
             width: 1.2rem;
             // box-shadow: 0 0 5px rgba(0, 0, 0, .3),
-                // 3px 3px 3px rgba(0, 0, 0, .2);
+            // 3px 3px 3px rgba(0, 0, 0, .2);
         }
     }
 
@@ -171,17 +172,23 @@
 @media screen and (min-width:1200px) {
     html {
         // background-color: #000;
-        font-size: 150px !important;
+        // font-size: 150px !important;
+        background-image: url(../image/back-01.png);
+        background-position: center center;
+        background-size: 100% 100%;
+        font-size: 145px;
     }
 
     .all {
         max-width: 1140px;
+        background: none;
     }
 
     .header {
 
         .contact {
             display: block !important;
+            right: 0;
         }
 
         .contactP {
@@ -193,14 +200,42 @@
 @media screen and (min-width:1440px) {
     html {
         // background-color: #f00;
-        font-size: 150px !important;
+        // font-size: 150px !important;
+        font-size: 160px;
     }
 
     .all {
         max-width: 1200px;
 
         .header .contact {
-            right: 1.5rem;
+            right: 0.5rem;
+            right: 0;
+        }
+
+        .button-group {
+            .ifcantdownload {
+                border: 5px solid rgb(64, 128, 255);
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width:1600px) {
+    html {
+        // background-color: #f00;
+        // font-size: 150px !important;
+        font-size: 200px;
+
+    }
+
+    .all {
+        max-width: 1200px;
+        max-width: 1500px;
+
+        .header .contact {
+            right: 0.5rem;
+            right: 0;
         }
 
         .button-group {

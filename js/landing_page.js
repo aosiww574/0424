@@ -43,7 +43,12 @@ for (i = 0; i < swiper.pagination.bullets.length; i++) {
     function resize() {
         var screenWidth = document.body.offsetWidth;
         var fontSize = (screenWidth / defaultScreenWidth) * defaultFontSize;
-        if (fontSize > 100) fontSize = 100;
+        // if (fontSize > 100) fontSize = 100;
+        // if (fontSize > 100 && $(window).width() <= 750) fontSize = 100;
+        if (fontSize > 100 && document.body.clientWidth <= 1200) fontSize = 100;
+        if (document.body.clientWidth >= 1200 && document.body.clientWidth < 1440) fontSize = 145;
+        if (document.body.clientWidth >= 1440 && document.body.clientWidth < 1600) fontSize = 160;
+        if (document.body.clientWidth >= 1600) fontSize = 220;
         htmlNode.style.fontSize = fontSize + 'px';
     }
     document.addEventListener('DOMContentLoaded', function () {

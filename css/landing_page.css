@@ -10,6 +10,7 @@
   margin: 0 auto;
   background-image: url(../image/back-01.png);
   background-position: center center;
+  background-size: 100% 100%;
 }
 .all .header {
   width: 100%;
@@ -22,8 +23,8 @@
 .all .header .contact {
   position: fixed;
   right: 0;
-  bottom: 1.5rem;
-  width: 2rem;
+  bottom: 1rem;
+  width: 0.6rem;
   display: none;
   z-index: 10;
 }
@@ -139,13 +140,18 @@
 }
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 150px !important;
+    background-image: url(../image/back-01.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    font-size: 145px;
   }
   .all {
     max-width: 1140px;
+    background: none;
   }
   .header .contact {
     display: block !important;
+    right: 0;
   }
   .header .contactP {
     display: none;
@@ -153,13 +159,30 @@
 }
 @media screen and (min-width: 1440px) {
   html {
-    font-size: 150px !important;
+    font-size: 160px;
   }
   .all {
     max-width: 1200px;
   }
   .all .header .contact {
-    right: 1.5rem;
+    right: 0.5rem;
+    right: 0;
+  }
+  .all .button-group .ifcantdownload {
+    border: 5px solid #4080ff;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 200px;
+  }
+  .all {
+    max-width: 1200px;
+    max-width: 1500px;
+  }
+  .all .header .contact {
+    right: 0.5rem;
+    right: 0;
   }
   .all .button-group .ifcantdownload {
     border: 5px solid #4080ff;
