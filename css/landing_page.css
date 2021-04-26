@@ -91,6 +91,7 @@
   margin: 0 auto;
   width: 80%;
   height: 0.85rem;
+  cursor: pointer;
 }
 .all .button-group .download {
   background: linear-gradient(to right, #85caff, #3b6bdd);
