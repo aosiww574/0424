@@ -126,6 +126,8 @@
   width: 50%;
   display: flex;
   padding-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .all .qq-wrapper .h2-wrapper {
   display: flex;
@@ -134,13 +136,18 @@
   justify-content: center;
   margin-right: 10px;
   color: #777;
+  width: 100%;
 }
 .all .qq-wrapper .h2-wrapper p {
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
 }
 .all .qq-wrapper img {
-  width: 52%;
+  display: flex;
+  width: 50%;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
 }
 .swiper-container {
   /* 輪播長和寬 */
@@ -203,7 +210,7 @@
   }
   .all .header .contactP {
     position: fixed;
-    top: 5rem;
+    top: 4rem;
     z-index: 20;
     right: 0;
     width: 0.6rem;
