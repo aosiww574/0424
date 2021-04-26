@@ -23,6 +23,11 @@
             width: 100%;
         }
 
+
+        .logo2 {
+            display: none;
+        }
+
         .contact {
             position: fixed;
             right: 0;
@@ -171,8 +176,6 @@
 
 @media screen and (min-width:1200px) {
     html {
-        // background-color: #000;
-        // font-size: 150px !important;
         background-image: url(../image/back-01.png);
         background-position: center center;
         background-size: 100% 100%;
@@ -182,25 +185,97 @@
     .all {
         max-width: 1140px;
         background: none;
-    }
 
-    .header {
 
-        .contact {
-            display: block !important;
-            right: 10px;
+        .header {
+            .logo1 {
+                display: none;
+            }
+
+            .logo2 {
+                display: block;
+                width: 30%;
+                margin: 0 auto;
+                padding-top: 50px;
+            }
+
+            .contact {
+                display: block !important;
+                right: 10px;
+            }
+
+            .contactP {
+                display: none;
+            }
         }
 
-        .contactP {
-            display: none;
+        .logo-5 {
+            img {
+                top: 0;
+            }
+        }
+
+        #textimg {
+            position: relative;
+            top: 1rem;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .button-group {
+            button {
+                position: relative;
+                top: 1rem;
+                height: 0.4rem;
+                width: 50%;
+                width: 40%;
+            }
+
+            .download {
+                line-height: .16rem;
+                font-size: .15rem;
+            }
+
+            .ifcantdownload {
+                line-height: .16rem;
+                font-size: .15rem;
+            }
+        }
+
+        .text {
+            position: relative;
+            top: 1rem;
+
+            p {
+                font-size: 0.12rem;
+                line-height: 0.12rem;
+            }
+        }
+
+        .footer {
+            position: relative;
+            top: 1rem;
+
+            img {
+                width: 50%;
+            }
         }
     }
+
+    .swiper-container {
+        top: 1rem;
+    }
+
+    .swiper-slide img {
+        height: 5rem;
+        width: 50%;
+    }
+
+
 }
 
 @media screen and (min-width:1440px) {
     html {
-        // background-color: #f00;
-        // font-size: 150px !important;
         font-size: 160px;
     }
 
@@ -223,8 +298,6 @@
 
 @media screen and (min-width:1600px) {
     html {
-        // background-color: #f00;
-        // font-size: 150px !important;
         font-size: 200px;
 
     }

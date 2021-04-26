@@ -20,6 +20,9 @@
 .all .header img {
   width: 100%;
 }
+.all .header .logo2 {
+  display: none;
+}
 .all .header .contact {
   position: fixed;
   right: 0;
@@ -149,12 +152,67 @@
     max-width: 1140px;
     background: none;
   }
-  .header .contact {
+  .all .header .logo1 {
+    display: none;
+  }
+  .all .header .logo2 {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .all .header .contact {
     display: block !important;
     right: 10px;
   }
-  .header .contactP {
+  .all .header .contactP {
     display: none;
+  }
+  .all .logo-5 img {
+    top: 0;
+  }
+  .all #textimg {
+    position: relative;
+    top: 1rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .all .button-group button {
+    position: relative;
+    top: 1rem;
+    height: 0.4rem;
+    width: 50%;
+    width: 40%;
+  }
+  .all .button-group .download {
+    line-height: 0.16rem;
+    font-size: 0.15rem;
+  }
+  .all .button-group .ifcantdownload {
+    line-height: 0.16rem;
+    font-size: 0.15rem;
+  }
+  .all .text {
+    position: relative;
+    top: 1rem;
+  }
+  .all .text p {
+    font-size: 0.12rem;
+    line-height: 0.12rem;
+  }
+  .all .footer {
+    position: relative;
+    top: 1rem;
+  }
+  .all .footer img {
+    width: 50%;
+  }
+  .swiper-container {
+    top: 1rem;
+  }
+  .swiper-slide img {
+    height: 5rem;
+    width: 50%;
   }
 }
 @media screen and (min-width: 1440px) {
