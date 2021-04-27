@@ -145,7 +145,6 @@
 }
 .all .qq-wrapper img {
   display: flex;
-  flex-basis: 40%;
   justify-content: center;
   align-items: center;
 }
