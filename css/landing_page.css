@@ -145,7 +145,7 @@
 }
 .all .qq-wrapper img {
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 40%;
   justify-content: center;
   align-items: center;
 }
@@ -309,7 +309,7 @@
     border: 5px solid #4080ff;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
   .all .qq-wrapper .h2-wrapper {
     display: flex;
     flex-direction: column;
@@ -324,7 +324,7 @@
     text-align: center;
   }
   .all .qq-wrapper img {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
   }
 }
